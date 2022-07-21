@@ -8,7 +8,7 @@ function App() {
   const [score, setscore]=useState(0);
   const [screenscore, setscreenscore]=useState(false);
   const selectoptions= (index)=>{
-
+    console.log(index);
     if (curquestion.snswer === index) {
         setscore(score + 1);
     }
@@ -25,6 +25,7 @@ function App() {
     setscreenscore(false)
     setscore(0)
   };
+
  
 return(
 <div className="container">
